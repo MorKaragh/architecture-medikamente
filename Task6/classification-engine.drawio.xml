@@ -1,0 +1,183 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="Task6-C4-Container" name="C4 Container — движок классификации">
+    <mxGraphModel dx="1447" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t6-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1" value="C4 Container — движок классификации данных перед пакетной загрузкой в аналитическое хранилище (контур «Медикаменте»)" vertex="1">
+          <mxGeometry height="36" width="1000" x="40" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-boundary" parent="1" style="rounded=1;dashed=1;dashPattern=8 8;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#006600;strokeWidth=2;verticalAlign=top;align=left;spacingTop=6;spacingLeft=12;fontStyle=1;fontSize=13;arcSize=4;" value="Система в фокусе: конвейер подготовки и классификации (privacy-safe ingestion)" vertex="1">
+          <mxGeometry height="700" width="1270" x="40" y="-70" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Операционные источники выгрузок" c4Type="Software System" c4Description="Платформа, 1С, файлы — батчи без стабильных тегов конфиденциальности" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-src">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;strokeColor=#736782;align=center;arcSize=6;" vertex="1">
+            <mxGeometry height="100" width="240" x="100" y="10" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Оркестратор пакетных загрузок" c4Type="Container" c4Technology="Dagster / Airflow / k8s Jobs" c4Description="Планирование батчей, идемпотентность, ретраи, SLA" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-orch">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;align=center;" vertex="1">
+            <mxGeometry height="110" width="240" x="100" y="185" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Реестр контрактов и схем" c4Type="Container" c4Technology="PostgreSQL + OpenMetadata / Avro" c4Description="Версии схем, drift, сопоставление колонок с глоссарием" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-schema">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;align=center;" vertex="1">
+            <mxGeometry height="110" width="240" x="100" y="335" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Движок классификации" c4Type="Container" c4Technology="Python / JVM + API" c4Description="Агрегация сигналов правил и ML, уверенность, маршрутизация" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-engine">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#1164BD;fontColor=#ffffff;strokeColor=#0B4884;align=center;fontStyle=1" vertex="1">
+            <mxGeometry height="120" width="260" x="530" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Воркеры детекции (PII / мед. сущности)" c4Type="Container" c4Technology="Presidio, spaCy, кастомные модели" c4Description="Параллельная разметка полей и значений" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-workers">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;align=center;" vertex="1">
+            <mxGeometry height="110" width="260" x="530" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Хранилище правил и политик" c4Type="Container" c4Technology="Git + OPA / внутр. БД" c4Description="Классы P0–P3, маскирующие действия, запреты загрузки" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-policy">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;align=center;" vertex="1">
+            <mxGeometry height="110" width="260" x="1000" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Очередь событий и DLQ" c4Type="Container" c4Technology="Kafka / RabbitMQ" c4Description="Backpressure, повтор обработки, изоляция сбоев" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-queue">
+          <mxCell parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;" vertex="1">
+            <mxGeometry height="100" width="260" x="530" y="340" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Карантин и ручная разметка" c4Type="Container" c4Technology="Web UI + БД" c4Description="Низкая уверенность, новые колонки, спорные кейсы" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-hil">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;align=center;" vertex="1">
+            <mxGeometry height="120" width="260" x="1000" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Трансформация и маскирование" c4Type="Container" c4Technology="Spark / dbt" c4Description="Псевдонимизация, хэширование, отсечение запрещённых полей" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-transform">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;align=center;" vertex="1">
+            <mxGeometry height="100" width="240" x="540" y="500" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Lakehouse / DWH (зонированное хранение)" c4Type="Container" c4Technology="S3 + Iceberg / Delta, Trino" c4Description="Landing → classified → curated → marts" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-lake">
+          <mxCell parent="1" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;fillColor=#2D7600;fontColor=#ffffff;strokeColor=#1F4D00;align=center;" vertex="1">
+            <mxGeometry height="100" width="280" x="950" y="500" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Каталог данных" c4Type="Software System" c4Description="Lineage, глоссарий, DPIA-привязки" label="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;" id="t6-catalog">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;strokeColor=#736782;align=center;" vertex="1">
+            <mxGeometry height="90" width="240" x="100" y="500" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="t6-e1" edge="1" parent="1" source="t6-src" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#006600;fontSize=10;" target="t6-orch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e1l" connectable="0" parent="t6-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="батчи файлов / таблиц" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e2" edge="1" parent="1" source="t6-orch" style="endArrow=block;html=1;rounded=0;strokeWidth=1;strokeColor=#828282;fontSize=10;" target="t6-schema">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e2l" connectable="0" parent="t6-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="профиль и drift схемы" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e3" edge="1" parent="1" source="t6-schema" style="endArrow=block;html=1;rounded=0;strokeWidth=1;strokeColor=#828282;fontSize=10;" target="t6-engine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e3l" connectable="0" parent="t6-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="контекст колонок" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e4a" edge="1" parent="1" source="t6-engine" style="endArrow=block;html=1;rounded=0;strokeWidth=1;strokeColor=#828282;fontSize=10;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="t6-workers">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e4al" connectable="0" parent="t6-e4a" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="задания на разбор полей" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e4" edge="1" parent="1" source="t6-workers" style="endArrow=block;html=1;rounded=0;strokeWidth=1;strokeColor=#828282;fontSize=10;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="t6-engine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e4l" connectable="0" parent="t6-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="сигналы классов" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e5" edge="1" parent="1" source="t6-engine" style="endArrow=block;html=1;rounded=0;strokeWidth=1;strokeColor=#828282;fontSize=10;" target="t6-policy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e5l" connectable="0" parent="t6-e5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="чтение политик" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e6" edge="1" parent="1" source="t6-engine" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#006600;fontSize=10;" target="t6-queue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e7" edge="1" parent="1" source="t6-queue" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#006600;fontSize=10;" target="t6-transform">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e7l" connectable="0" parent="t6-e7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="готовые батчи с метками" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e8" edge="1" parent="1" source="t6-transform" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#006600;fontSize=10;" target="t6-lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e8l" connectable="0" parent="t6-e8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="запись по зонам" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e9" edge="1" parent="1" style="endArrow=block;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#B57300;fontSize=10;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="t6-hil">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e9l" connectable="0" parent="t6-e9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="низкая уверенность" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint x="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e10" edge="1" parent="1" source="t6-hil" style="endArrow=block;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#2D7600;fontSize=10;exitX=0;exitY=0.75;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="t6-engine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e10l" connectable="0" parent="t6-e10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="подтверждённые классы" vertex="1">
+          <mxGeometry relative="1" x="0.2" y="-3" as="geometry">
+            <mxPoint x="32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e11" edge="1" parent="1" source="t6-schema" style="endArrow=block;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#6D6D6D;fontSize=10;" target="t6-catalog">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e11l" connectable="0" parent="t6-e11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="публикация версий" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6-e12" edge="1" parent="1" source="t6-transform" style="endArrow=block;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#6D6D6D;fontSize=10;" target="t6-catalog">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6-e12l" connectable="0" parent="t6-e12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="lineage, теги" vertex="1">
+          <mxGeometry relative="1" x="0.3" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ezE3ui-PQWZzL1_A5Z04-1" edge="1" parent="1" source="t6-orch" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#006600;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t6-engine">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="418" as="sourcePoint" />
+            <mxPoint x="600" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ezE3ui-PQWZzL1_A5Z04-2" connectable="0" parent="ezE3ui-PQWZzL1_A5Z04-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="данные для анализа" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

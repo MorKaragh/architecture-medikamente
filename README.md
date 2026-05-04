@@ -1,1 +1,58 @@
-hello
+# Медикаменте — архитектурные артефакты
+
+Индекс в стиле вики: каждая строка ведёт на **файл** (решение, сопутствующий документ или исходник диаграммы). Растровые PNG лежат рядом с draw.io в `TaskN/img/` — открывайте из того же каталога, что и `.xml`.
+
+---
+
+## Задание 1 — DFD AS-IS / TO-BE, аудит, теги, меры
+
+| Документ | Описание |
+|----------|----------|
+| [**Task1/SOLUTION.md**](Task1/SOLUTION.md) | Потоки данных, категории ПДн, теги, матрица мер, TO-BE |
+| [**Task1/PROBLEMS.md**](Task1/PROBLEMS.md) | Зоны риска AS-IS, матрица «процесс × требования» |
+| [**Task1/Task1.drawio.xml**](Task1/Task1.drawio.xml) | Исходник всех страниц DFD (draw.io) |
+
+---
+
+## Задание 2 — Privacy by Design, C4 Context, аналитика
+
+| Документ | Описание |
+|----------|----------|
+| [**Task2/SOLUTION.md**](Task2/SOLUTION.md) | Принципы PbD, новые блоки, аналитический контур |
+| [**Task2/architecture.drawio.xml**](Task2/architecture.drawio.xml) | C4 Context TO-BE (draw.io) |
+
+---
+
+## Задание 3 — Стратегия защиты данных
+
+| Документ | Описание |
+|----------|----------|
+| [**Task3/SOLUTION.md**](Task3/SOLUTION.md) | Состояния данных, классы P0–P3, реестр средств, автоконтроль |
+
+---
+
+## Задание 4 — Узкие места миграции (Исикава)
+
+| Документ | Описание |
+|----------|----------|
+| [**Task4/SOLUTION.md**](Task4/SOLUTION.md) | Отчёт, категории причин, меры и приоритеты |
+| [**Task4/ishikawa.drawio.xml**](Task4/ishikawa.drawio.xml) | Диаграмма Исикавы (draw.io) |
+
+---
+
+## Задание 5 — Миграция и cutover
+
+| Документ | Описание |
+|----------|----------|
+| [**Task5/SOLUTION.md**](Task5/SOLUTION.md) | Стратегия parallel run, этапы, риски, роли |
+| [**Task5/flowchart.drawio.xml**](Task5/flowchart.drawio.xml) | Блок-схема логики cutover (draw.io) |
+| [**Task5/img/flowchart.png**](Task5/img/flowchart.png) | Растровый экспорт блок-схемы cutover |
+
+---
+
+## Задание 6 — Движок классификации перед аналитикой
+
+| Документ | Описание |
+|----------|----------|
+| [**Task6/SOLUTION.md**](Task6/SOLUTION.md) | Конвейер, слои хранилища, метрики, масштабирование |
+| [**Task6/classification-engine.drawio.xml**](Task6/classification-engine.drawio.xml) | C4 Container движка (draw.io) |

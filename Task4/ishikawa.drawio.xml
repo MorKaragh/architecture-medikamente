@@ -1,0 +1,151 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="ishikawa-migration" name="Исикава — миграция">
+    <mxGraphModel dx="166" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1" value="Медикаменте: диаграмма Исикавы — причины узких мест производительности и доступности при миграции с монолита на распределённую архитектуру" vertex="1">
+          <mxGeometry height="50" width="1230" x="1285.5" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-1" edge="1" parent="1" source="kOljSjDUJ5LBmjZcK0dy-2" style="endArrow=none;html=1;strokeWidth=4;strokeColor=#36393d;endFill=0;fillColor=#cce5ff;entryX=0;entryY=0.5;entryDx=30;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="kOljSjDUJ5LBmjZcK0dy-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="400" as="sourcePoint" />
+            <mxPoint x="1920" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-2" parent="1" style="triangle;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" value="" vertex="1">
+          <mxGeometry height="80" width="60" x="1380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-24" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="147" width="299" x="1596" y="403" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-10" edge="1" parent="kOljSjDUJ5LBmjZcK0dy-24" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;width=2.1875;endSize=1.78125;endWidth=8.75;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="199" y="140" as="sourcePoint" />
+            <mxPoint x="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-12" parent="kOljSjDUJ5LBmjZcK0dy-24" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#66B2FF;fontStyle=1;fontSize=16;" value="Интеграции" vertex="1">
+          <mxGeometry height="20" width="90" x="106" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-20" parent="kOljSjDUJ5LBmjZcK0dy-24" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;цепочка 1С–ККМ–OLE — узкое горло&lt;/span&gt;" vertex="1">
+          <mxGeometry height="19" width="183" x="84" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-21" parent="kOljSjDUJ5LBmjZcK0dy-24" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;синхронные API без лимитов/очередей&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="188" x="61" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-22" parent="kOljSjDUJ5LBmjZcK0dy-24" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;лаборатория — всплески входящих&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="170" x="61" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-23" parent="kOljSjDUJ5LBmjZcK0dy-24" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;дублирование записей в нескольких контурах&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="220" y="87" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-25" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="147" width="237" x="1413" y="403" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-6" edge="1" parent="kOljSjDUJ5LBmjZcK0dy-25" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;width=2.1875;endSize=1.78125;endWidth=8.75;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="137" y="140" as="sourcePoint" />
+            <mxPoint x="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-13" parent="kOljSjDUJ5LBmjZcK0dy-25" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#66B2FF;fontStyle=1;fontSize=16;" value="Инфраструктура" vertex="1">
+          <mxGeometry height="20" width="90" x="24" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-16" parent="kOljSjDUJ5LBmjZcK0dy-25" style="text;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;один ЦОД/сервер — SPOF&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="130" x="25" y="87" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-17" parent="kOljSjDUJ5LBmjZcK0dy-25" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;диск и сеть не под ×5 данных&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="140" x="30" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-18" parent="kOljSjDUJ5LBmjZcK0dy-25" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;задержки при филиалах (WAN)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="156" x="36" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-19" parent="kOljSjDUJ5LBmjZcK0dy-25" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;1С в файловом режиме — блокировки I/O&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="200" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-34" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="157" width="256" x="1557" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-30" parent="kOljSjDUJ5LBmjZcK0dy-34" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;нет формализованных SLO/ёмкости&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="172" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-33" parent="kOljSjDUJ5LBmjZcK0dy-34" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;приоритет фич над NFR в релизах&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="166" x="51" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-32" parent="kOljSjDUJ5LBmjZcK0dy-34" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;отсутствие регламентов отката&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="156" x="53" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-8" edge="1" parent="kOljSjDUJ5LBmjZcK0dy-34" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;width=2.1875;endSize=1.78125;endWidth=8.75;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="156" y="17" as="sourcePoint" />
+            <mxPoint x="256" y="157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-14" parent="kOljSjDUJ5LBmjZcK0dy-34" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#66B2FF;fontStyle=1;fontSize=16;" value="Процессы" vertex="1">
+          <mxGeometry height="20" width="87" x="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-31" parent="kOljSjDUJ5LBmjZcK0dy-34" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;миграция без поэтапной стратегии&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="170" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-35" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="157" width="269" x="1321" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-5" edge="1" parent="kOljSjDUJ5LBmjZcK0dy-35" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;width=2.1875;endSize=1.78125;endWidth=8.75;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="169" y="17" as="sourcePoint" />
+            <mxPoint x="269" y="157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-11" parent="kOljSjDUJ5LBmjZcK0dy-35" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#66B2FF;fontStyle=1;fontSize=16;" value="Персонал" vertex="1">
+          <mxGeometry height="20" width="80" x="89" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-26" parent="kOljSjDUJ5LBmjZcK0dy-35" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;малый IT-контур vs K8s/микросервисы&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="185" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-27" parent="kOljSjDUJ5LBmjZcK0dy-35" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;дефицит SRE/нагрузочного тестирования&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="199" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-28" parent="kOljSjDUJ5LBmjZcK0dy-35" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;&lt;u&gt;обучение бизнеса — ошибки в пиках&lt;/u&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="180" x="33" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-29" parent="kOljSjDUJ5LBmjZcK0dy-35" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;выгорание при «большом взрыве» cutover&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="200" x="27" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-40" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="157" width="261" x="1770" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-9" edge="1" parent="kOljSjDUJ5LBmjZcK0dy-40" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;width=2.1875;endSize=1.78125;endWidth=8.75;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="161" y="17" as="sourcePoint" />
+            <mxPoint x="261" y="157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-15" parent="kOljSjDUJ5LBmjZcK0dy-40" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#66B2FF;fontStyle=1;fontSize=16;" value="ПО" vertex="1">
+          <mxGeometry height="20" width="27" x="134" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-36" parent="kOljSjDUJ5LBmjZcK0dy-40" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;Excel/файлы как хранилище — гонки&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-37" parent="kOljSjDUJ5LBmjZcK0dy-40" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;пики CPU/RAM на JVM/EMR&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="140" x="70" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-38" parent="kOljSjDUJ5LBmjZcK0dy-40" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;отсутствие кэшей и read-моделей&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-39" parent="kOljSjDUJ5LBmjZcK0dy-40" style="text;whiteSpace=wrap;html=1;fontStyle=4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); float: none; display: inline !important;&quot;&gt;тяжёлые синхронные транзакции&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-41" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="100" width="340" x="2050" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="kOljSjDUJ5LBmjZcK0dy-3" parent="kOljSjDUJ5LBmjZcK0dy-41" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.03;dx=50;notch=30;fillColor=#cce5ff;strokeColor=#36393d;" value="" vertex="1">
+          <mxGeometry height="100" width="340" as="geometry" />
+        </mxCell>
+        <mxCell id="head" parent="kOljSjDUJ5LBmjZcK0dy-41" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;fontStyle=1;align=left;verticalAlign=middle;fontSize=12;strokeColor=none;" value="Эффект (проблема):&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;риск деградации производительности,&lt;br&gt;доступности и времени отклика&lt;br&gt;целевой системы при миграции и росте нагрузки&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="40" y="5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
