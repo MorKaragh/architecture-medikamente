@@ -45,6 +45,8 @@
 | Документ | Описание |
 |----------|----------|
 | [**Task5/SOLUTION.md**](Task5/SOLUTION.md) | Стратегия parallel run, этапы, риски, роли |
+| [**Task5/flowchart.drawio.xml**](Task5/flowchart.drawio.xml) | Блок-схема логики cutover (draw.io) |
+| [**Task5/img/flowchart.png**](Task5/img/flowchart.png) | Растровый экспорт блок-схемы cutover |
 
 ---
 
@@ -54,11 +56,3 @@
 |----------|----------|
 | [**Task6/SOLUTION.md**](Task6/SOLUTION.md) | Конвейер, слои хранилища, метрики, масштабирование |
 | [**Task6/classification-engine.drawio.xml**](Task6/classification-engine.drawio.xml) | C4 Container движка (draw.io) |
-
----
-
-## Прочее
-
-| Документ | Описание |
-|----------|----------|
-| [**AUTO_REVIEW.md**](AUTO_REVIEW.md) | Чеклист ревью постановок и статус замечаний |
