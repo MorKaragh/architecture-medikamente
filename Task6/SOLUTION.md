@@ -14,9 +14,11 @@
 
 ## 2. C4 Container: движок и конвейер
 
-Диаграмма уровня **Container** (C4 / условное «C2»): [`classification-engine.drawio.xml`](classification-engine.drawio.xml).
+Диаграмма уровня **Container** (C4 / условное «C2»): [`classification-engine.drawio.xml`](classification-engine.drawio.xml). В терминологии задания использован уровень «C2 решения», который в нотации C4 соответствует контейнерному уровню.
 
 На схеме в фокусе — связанные контейнеры: оркестратор батчей, реестр контрактов и схем, **движок классификации**, воркеры детекции, хранилище политик, очередь/DLQ, карантин ручной разметки, трансформация и зонированный Lakehouse/DWH; снаружи — источники выгрузок и каталог данных.
+
+![C4 Container (C2): движок классификации и пакетный конвейер](img/classification-engine.drawio.png)
 
 ---
 
@@ -104,6 +106,7 @@
 | Артефакт | Путь |
 |----------|------|
 | Диаграмма **C4 Container** (движок и конвейер) | [`classification-engine.drawio.xml`](classification-engine.drawio.xml) |
+| Растровый экспорт диаграммы | [`img/classification-engine.drawio.png`](img/classification-engine.drawio.png) |
 
 ---
 
